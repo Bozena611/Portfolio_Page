@@ -1,0 +1,346 @@
+* {
+    font-family: Candara, Arial, sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.sticky {		/*the whole page needs to be wrapped inside a container for sticky to work*/
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 1;
+}
+
+body {
+	background-color: #ba8cd7; /*#121212;*/ /*#382A41;*/
+	/*background-color: #603F83FF;*/
+	/*background-color: #76528BFF;*/
+
+}
+
+.small {
+	display: none;
+}
+
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	background: /*#CBCE91FF;*/ #f3e5f5;
+	border-radius: 10px;
+	padding: 1% 6%;
+	
+}
+
+
+.navlink a {
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	padding 0.7em;
+	
+}
+
+.navlink a:hover {
+  background-color: #ba8cd7;
+  /*padding: 0.5em;*/ /*makes text move*/
+  border-radius: 5%;
+}
+
+.navlink a:active {
+  background-color: #ba8cd7;
+  padding 1.2em;
+}  
+
+#about-grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin: 0 7em 2em 5em;
+	margin-right 7em;
+	grid-column-gap: 1em;
+}
+.profileimg {
+	border-radius: 50%;
+	height: auto;
+	width: 60%;
+	text-align: center;
+	padding: 3vh 0;
+	filter grayscale(100%);
+	filter: drop-shadow(8px 8px 10px gray);
+}
+
+.img-container {
+	text-align: center;
+}
+
+.contact {
+	text-align: center;
+}
+.contact h2 {
+	margin: 10px 5px;
+}
+
+.contact p {
+	margin: 8px 0 8px;
+}
+
+.contact-logo {
+	margin-top: 8px ;
+}
+
+.linkedin {
+	height: 12%;
+	width: 12%;
+	padding-top: 5px;
+}
+
+.gitlab {
+	height: 10%;
+	width: 10%;
+	padding-top: 5px;
+}
+
+.github {
+	height: 11%;
+	width: 11%;
+	padding-top: 5px;
+}
+
+
+#skills {
+	margin-top: 10vh;
+}
+
+#skills h2 {
+	text-align: center;
+	margin-left 5em;
+	margin-top: 2vh;
+	padding-bottom: 3vh;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-radius: 10px;
+	padding: 25px;
+	grid-column-gap: 4em;
+	filter: drop-shadow(8px 8px 10px gray);
+}
+
+.skills-grid-item {
+	background-color: /*#705481;*/ /*#fcf6f5ff;*/ #f3e5f5;
+	color #212121;
+	padding: 20px;
+  border-radius: 10px;
+  border-color: #CBCE91FF;
+  text-align center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.logos-grid {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr 1fr;
+}
+.logos {
+	grid-column: 1/ span 2;
+}
+/*
+.skill-list ul {
+	display: inline-flex;
+}
+*/
+.imgLogo {
+	height: 40px;
+	margin-right: 3%;
+	margin-bottom: 3%;
+	vertical-align: middle;
+}
+
+.imgLogo-bigger {
+	height: 60px;
+}
+
+.logos-list {
+	list-style: none;
+}
+
+.languages {
+	list-style: none;
+	padding-left: 4em;
+}
+
+.flag {
+	margin-right: 0;
+	height: 30px; /*needed for flags*/
+	vertical-align: middle;
+	margin-bottom: 3%;  /*needed for flags*/
+}
+
+/*
+.indent {
+	padding-left: 1.45em;
+}
+.indent2 {
+	padding-left: 0.55em;
+}
+*/
+
+#projects {
+	margin-top: 10vh;
+}
+
+#projects h2 {
+	margin: 5vh;
+
+}
+/* Good for big calculator image - without it good for ecommerce */
+/*#projects img {
+	height: auto;
+	width: 40%;
+
+}*/
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  padding: 0.625em;
+  /*grid-column-gap: 4em;*/
+  grid-row-gap: 5vh;
+}
+
+.inner-grid1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+	filter: drop-shadow(8px 8px 10px gray);
+}
+
+.grid-item {
+  background-color: /*#CBCE91FF;*/ /*#fcf6f5ff;*/ #f3e5f5;
+  /*background-color: #C7D3D4FF;*/
+  /*background-color: #4b4c4c;*/
+  padding: 20px;
+  border-radius: 10px;
+  /*font-size: 30px;*/
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+ }
+
+ #login {
+ 	text-align: left;
+ 	margin-bottom: 0;
+ }
+
+ #pass {
+ 	margin-top: 0;
+ 	text-align: left;
+ }
+
+#ecommerceimg {
+	height: auto;
+	width: 50%;
+}
+#calculatorimg {
+	/*width: 30%;
+	height: 5%;*/
+	height: auto;
+	width: 30%;
+}
+
+button {
+	margin-top: 1.5em;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+
+/*
+.clones-grid {
+	display: flex;
+	justify-content: space-between;
+}
+*/
+
+.clones {
+	display: grid;
+	grid-template-rows: auto auto;
+	background-color: #f3e5f5; /*#CBCE91FF;*/ /*#a3869a;*/ /*#FDF5C9;*/ /*#FFFDD1;*/
+	border-radius: 10px;
+	filter: drop-shadow(8px 8px 10px gray);
+}
+
+.clones-title {
+	text-align: center;
+	padding: 20px;
+}
+
+.clones-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item1 img {
+	width: 60%;
+	height: 40%;
+}
+#calculator-img {
+	width: 40%;
+	height: auto;
+}
+/*
+#carousel-img {
+	height: 35%;
+	width: 60%;
+}
+#alarm-clock-img {
+	height: 35%;
+	width: 60%;
+}*/
+/*
+.img-clones {
+	width:  100px;
+  height: 100px;
+  background-size: cover;
+}
+*/
+
+footer {
+	text-align: right;
+}
+
+@media screen and (max-width: 1200px){
+	.languages {
+		padding-left: 0;
+}
+
+@media screen and (max-width: 480px){
+	.small {
+	display: flex;
+	justify-content: space-between;
+	background: #CBCE91FF;
+	color: white;
+	padding: 2% 10%;
+	/*top: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	z-index: 1;*/
+	list-style: none;
+	}
+
+	.small img {
+	width: 7%;
+	height: 7%;
+	margin: 1em 0;
+}
+.skills-grid, .inner-grid1, .clones-grid, #about-grid {
+	grid-template-columns: 1fr;
+	grid-row-gap: 4em;
+	margin: 0;
+}
+
+
